@@ -5,11 +5,11 @@ class Model {
 
     } //default constructor
 
-    Model(int num, String name){
+    Model(int num, String name){         // parameterized constructor
         System.out.println("Model Number: "+num+ " Name: "+name);
     }
 
-    void insertRecord(int num, String name) {
+    void insertRecord(int num, String name) {        // method to initialize object
         this.modelNumber = num;
         this.modelName = name;
     }
@@ -19,10 +19,7 @@ class Model {
         System.out.println("Car Model Name: "+ modelName);
     }
 
-    void pass()
-    {
-
-    }
+    void pass(){}
 }
 
 

@@ -1,6 +1,3 @@
-
-// COPY CONSTRUCTOR
-
 class Friend {
     String name;
     int age;
@@ -19,15 +16,9 @@ class Friend {
         System.out.println("Copy Constructor called for " + other.name);
     }   
 
-    Friend() {  // Default Constructor
-        System.out.println("Default Constructor called");
-    }
-
     void display() {
         System.out.println("Name: " + name + ", Age: " + age);
     }
-
-    void pass() {}
 }
 
 public class C_Constructor {
@@ -39,10 +30,6 @@ public class C_Constructor {
 
         Friend f2 = new Friend(f1);  // Using Copy Constructor
         f2.display();
-        System.out.println("\n");
-        
-        Friend f3 = new Friend();  // Default Constructor called
-        f3.display();
         System.out.println("\n");
     }
 }
