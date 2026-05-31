@@ -18,10 +18,11 @@ class StudentRecord {
 
 public class Studentmgmt{
     public static void main(String[] args) {
-        StudentRecord student1 = new StudentRecord(1, "Arin", 3.8);
-        StudentRecord student2 = new StudentRecord(2, "Swors", 4.0);
+        StudentRecord student1 = new StudentRecord(1, "Bizesh", 3.7);
+        StudentRecord student2 = new StudentRecord(2, "Ojas", 3.9);
 
         student1.display();
+        System.out.println("\n");
         student2.display();
     }
 }

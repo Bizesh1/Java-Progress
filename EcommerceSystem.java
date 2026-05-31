@@ -17,8 +17,8 @@ class Product{
 }
 public class EcommerceSystem{
     public static void main(String[] args) {
-        Product product1 = new Product(1, "Laptop", 189999);
-        Product product2 = new Product(2, "Smartphone", 62999);
+        Product product1 = new Product(1, "Laptop", 130000);
+        Product product2 = new Product(2, "Smartphone", 42000);
 
         product1.display();
         product2.display();
