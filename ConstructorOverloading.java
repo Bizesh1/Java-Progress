@@ -18,7 +18,6 @@ class Student {
     void pass(){} // placeholder
 }
 
-
 public class ConstructorOverloading {
     public static void main (String[] args){
         Student s1 = new Student(123);
