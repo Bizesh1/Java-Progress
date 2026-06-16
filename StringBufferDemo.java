@@ -1,4 +1,3 @@
-//import java.lang.StringBuffer;
 
 public class StringBufferDemo {
     public static void main(String[] args) {
