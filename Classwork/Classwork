@@ -1,0 +1,12 @@
+Design and implement a LIbraby Management System in Java using the SOLID principles.
+
+The system should provide the following functionalities:
+
+Create a Book class to store information
+ADD BOOJS TO THE LIBRARY.
+Search a book by its title
+Issue a book.
+Return a Book.
+Send a notification after issuing or returning a book.
+Support multiple notifiaction methods (email, sms)
+Ensure the system follows all five SOLID principles.
