@@ -19,30 +19,27 @@ public class BankAccount {
     public boolean isFrozen() {return frozen;}
 
 
-    public void deposit(double amount)
-        throws AccountFrozenException {
+    public void deposit(double amount) throws AccountFrozenException {
 
         InvalidAmountException.validateAmount(amount);
         AccountFrozenException.checkAccountStatus(frozen, AccNumber);
 
         balance += amount;
-
         System.out.println("Deposited: Rs." + amount);
         System.out.println("Current Balance: Rs." + balance);
     }
 
-    public void withdraw(double amount) 
-        throws AccountFrozenException, InsufficientBalanceException {
-
-        InvalidAmountException.validateAmount(amount);
-        AccountFrozenException.checkAccountStatus(frozen, AccNumber);
-        InsufficientBalanceException.validateInsufficientBalance(AccNumber, balance, amount);
+    public void withdraw(double amount) throws AccountFrozenException, InsufficientBalanceException {
+        
+            InvalidAmountException.validateAmount(amount);
+            AccountFrozenException.checkAccountStatus(frozen, AccNumber);
+            InsufficientBalanceException.validateInsufficientBalance(AccNumber, balance, amount);
 
         balance -= amount;
-
         System.out.println("Withdrawn: Rs." + amount);
         System.out.println("Remaining Balance: Rs." + balance);
     }
 
 }
 
+ 
